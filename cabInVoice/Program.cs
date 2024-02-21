@@ -18,7 +18,7 @@ namespace cabInVoice
         public static double totalFair(double distance,int time)
         {
             double result = (distance * cost_per_kilometer) +( time * cost_per_minute);
-            if(result > 5)
+            if(result<5)
             {
                 return min_fair;
             }

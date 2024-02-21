@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using cabInVoice;
 
 namespace cabInVoice.Tests
 {
@@ -14,9 +15,11 @@ namespace cabInVoice.Tests
         [TestMethod()]
         public void totalFairTest()
         {
-            Console.WriteLine("created ");
-            Console.WriteLine("created ");
-            Assert.Fail();
+            double distance = 2.0;
+            int time = 5;
+            double Expected = 25;
+            double actual=Program.totalFair(distance,time);
+            Assert.AreEqual(Expected,actual);
         }
     }
 }
