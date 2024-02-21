@@ -11,6 +11,7 @@ namespace cabInVoice
         static double cost_per_kilometer = 10.0;
         static double cost_per_minute = 1.0;
         static int min_fair = 5;
+        static int total = 0;
         static void Main(string[] args)
         {
            
@@ -23,6 +24,10 @@ namespace cabInVoice
                 return min_fair;
             }
             return result;
+        }
+        public static int totalRides(int time) 
+        {
+            return total;
         }
        
 
